@@ -1,7 +1,11 @@
+"""Define database models"""
+
 from django.db import models
 
 # Create your models here.
+
 class Todo(models.Model):
+    """Define todos table"""
     activity = models.CharField(max_length=20)
     reminder = models.BooleanField(default=False)
     completed = models.BooleanField(default=False)
@@ -9,3 +13,6 @@ class Todo(models.Model):
     # housekeeping
     timestamp = models.DateTimeField(auto_now_add=True)
     updated_at = models.DateTimeField(auto_now=True)
+    
+    class Meta:
+        ordering = ['activity_datetime']

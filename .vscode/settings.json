@@ -2,6 +2,7 @@
   "python.linting.pylintEnabled": true,
   "python.linting.enabled": false,
   "cSpell.words": [
-    "todoapp"
+    "todoapp",
+    "todos"
   ]
 }
