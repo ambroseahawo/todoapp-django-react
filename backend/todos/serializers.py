@@ -9,4 +9,4 @@ class TodoSerializer(serializers.ModelSerializer):
     class Meta:
         """specify which model to use and what fields to serialize"""
         model = Todo
-        fields = ['activity', 'reminder', 'completed', 'activity_datetime']
+        fields = ['id', 'activity', 'reminder', 'completed', 'activity_datetime']
